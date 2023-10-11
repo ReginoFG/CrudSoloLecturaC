@@ -11,6 +11,10 @@ namespace CrudSoloLectura.Servicios
     /// <author>rfg - 101023</author>
     internal class ConsultaPostgresqlImplementacion : ConsultaInterfaz
     {
+        /*
+         * Elegir o paso por referencia o creación del listado dentro.
+         * Si usas creación de lista, se debe crear dentro
+         * */
         public List<LibroDto> listarLibros(NpgsqlConnection conexion, List<LibroDto> listaLibrosObtenida, string isbnAConsultar)
         {
             ADto aDto = new ADto();
